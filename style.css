@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  .movie-card {
+    background-color: #ffffff2d;
+    border: 1px solid #cccccc5f;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .rating {
+    margin-bottom: 10px;
+  }
+  
+  .rating h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .stars {
+    display: inline-block;
+  }
+  
+  .star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('star.svg'); /* Use your star icon */
+    background-size: cover;
+  }
+  
+  .review h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .review p {
+    margin: 5px 0;
+  }
+  #shareBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #shareBtn:hover {
+    background-color: #0056b3;
+  }
+  .article {
+    margin-bottom: 30px;
+  }
+  
+  .article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .article p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .article-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .article-item:last-child {
+    border-bottom: none;
+  
+  background-color: #f0f0f038; /* Change to your desired background color */
+}
+
+#movies {
+  padding: 20px;
+}
+
+#movies h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#movieForm {
+  margin-bottom: 20px;
+}
+
+#movieForm div {
+  margin-bottom: 10px;
+}
+
+#movieForm label {
+  font-weight: bold;
+}
+
+#movieForm input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#movieForm button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#movieForm button:hover {
+  background-color: #0056b3;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  background-color: #ffffff85;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #666;
+}
+background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  

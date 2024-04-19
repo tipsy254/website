@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <h1>Movie Website</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">About</a></li>
+          <li><button id="shareBtn">Share</button></li>
+          <li><a href="#" id="loginLink">Login</a></li>
+          <li><a href="#" id="registerLink">Register</a></li>
+          <li><a href="#">News & Articles</a></li>
+            <input type="text" id="searchInput" placeholder="Search movies...">
+            <button id="searchButton">Search</button>
+          </li>
+        </ul>
+       
+    </nav>
+  </header>
+  <main>
+    <section id="movies">
+      <!-- Movie cards will be dynamically added here -->
+    </section>
+  </section>
+  <section id="loginForm" >
+    <h2>Login</h2>
+    <form id="login">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+  <section id="registerForm" class="hidden">
+    <h2>Register</h2>
+    <form id="register">
+      <input type="text" id="registerName" placeholder="Name" required>
+      <input type="email" id="registerEmail" placeholder="Email" required>
+      <input type="password" id="registerPassword" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </section>
 
+  <section id="movies">
+    <h2>Add New Movie</h2>
+    <form id="movieForm">
+      <div>
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+      </div>
+      <div>
+        <label for="director">Director:</label>
+        <input type="text" id="director" required>
+      </div>
+      <div>
+        <label for="year">Year:</label>
+        <input type="number" id="year" required>
+      </div>
+      <div>
+        <label for="poster">Poster URL:</label>
+        <input type="url" id="poster" required>
+      </div>
+      <button type="submit">Add Movie</button>
+    </form>
+    <div class="movies-container" id="moviesContainer">
+      <!-- Movie cards will be dynamically added here -->
+    </div>
+  </section>
+  <section id="profile" class="hidden">
+    <h2>Welcome, <span id="username"></span>!</h2>
+    <button id="logoutButton">Logout</button>
+  </section>
+  <div class="rating">
+   
+    <textarea id="reviewInception" rows="4" cols="50"></textarea>
+    <button onclick="submitReview('Inception')">Submit Review</button>
+</div>
+
+<div class="review">
+<h3>Reviews:</h3>
+
+
+
+<div class="rating">
+  <h3>Rate this movie:</h3>
+  <input type="radio" id="rating5" name="rating" value="5">
+  <label for="rating5">5</label>
+  <input type="radio" id="rating4" name="rating" value="4">
+  <label for="rating4">4</label>
+  <input type="radio" id="rating3" name="rating" value="3">
+  <label for="rating3">3</label>
+  <input type="radio" id="rating2" name="rating" value="2">
+  <label for="rating2">2</label>
+  <input type="radio" id="rating1" name="rating" value="1">
+  <label for="rating1">1</label>
+</div>
+
+
+
+<section id="news">
+  <div class="article">
+    <h2>Latest News</h2>
+    <p>Stay updated with the latest news and articles about movies.</p>
+    <div class="articles-list" id="articlesList">
+      <!-- Articles will be dynamically added here -->
+
+
+</div>
+</div>
+</section> 
+
+  </main>
+       
+
+  <script src="scripts.js"></script>
+</body>
+</html>
