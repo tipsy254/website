@@ -131,6 +131,9 @@ document.addEventListener("DOMContentLoaded", function() {
         synopsis: 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.'
       }
     ];
+    
+      
+    
     // Function to create movie cards
     function createMovieCard(movie) {
       const movieCard = document.createElement('div');
@@ -402,5 +405,21 @@ document.addEventListener("DOMContentLoaded", function() {
  
 
 });
-  
-  
+
+document.addEventListener("DOMContentLoaded", function() {
+  const body = document.body;
+
+  // Function to toggle dark theme
+  function toggleDarkTheme() {
+    body.classList.toggle('dark-theme');
+  }
+
+  // Event listener for theme toggle
+  document.addEventListener('keydown', function(event) {
+    // Check if the user pressed the "T" key (case-insensitive)
+    if (event.key.toLowerCase() === 't') {
+      toggleDarkTheme();
+    }
+  });
+});
+
