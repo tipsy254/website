@@ -194,6 +194,43 @@ document.addEventListener("DOMContentLoaded", function() {
     movieForm.reset();
   
 });
+
+const videos = [
+  {
+    title: 'deadpool and wolvering',
+    url: 'https://youtube/cen0rBKLuYE?si=KL9xpe-KTuc9vT6D'
+  },
+  {
+    title: 'The Shawshank Redemption - Scene',
+    url: 'https://www.youtube.com/embed/6hB3S9bIaco'
+  }
+  // Add more video objects as needed
+];
+
+// Function to create video cards
+function createVideoCard(video) {
+  const videoCard = document.createElement('div');
+  videoCard.classList.add('video-card');
+
+  const iframe = document.createElement('iframe');
+  iframe.src = video.url;
+  iframe.title = video.title;
+  videoCard.appendChild(iframe);
+
+  return videoCard;
+}
+
+// Function to display videos
+function displayVideos() {
+  videosContainer.innerHTML = '';
+  videos.forEach(video => {
+    const videoCard = createVideoCard(video);
+    videosContainer.appendChild(videoCard);
+  });
+}
+
+// Display sample videos when the page loads
+displayVideos();
   
     // Add movie cards to the movies container
     movies.forEach(movie => {

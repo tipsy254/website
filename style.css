@@ -238,5 +238,35 @@ header {
 .dark-theme .nav-links a {
   color: #fff;
 }
+/* Add this at the end of your existing CSS */
+
+#trailers {
+  padding: 20px;
+}
+
+#trailers h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background-color: #918a8a;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+
 
 
